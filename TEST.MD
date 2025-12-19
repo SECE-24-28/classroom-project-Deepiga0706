@@ -83,16 +83,21 @@
 ## Part 2: Short Answer Questions (10 Marks - 2 Marks Each)
 
 ### Q11. Explain the difference between `req.query`, `req.params`, and `req.body` with examples.
+req.params is used to get values from the URL path, req.query is used to get values from the query string, and req.body is used to get data sent in the request body. 
+For example, /user/5 uses req.params.id, /search?name=ram uses req.query.name, and form or JSON data sent in POST requests is accessed using req.body.
 
 ### Q12. Why is password hashing important? Why not store passwords directly?
+   Password hashing is important in the context of security purpose.Hackers can easily hack the applications,many of us have the habbit of keeping the same passwords for various applications.So,if one password get compromised then there is a chance of corrupting the whole system.Thats why hasing is important.
 
 ### Q13. What is rate limiting and why is it important for APIs?
+    Rate limiting is important because the server and the backend can be hacked by sendind too much of request.thats why we limit it.
 
 ### Q14. Explain what `async/await` does in the context of database operations.
 
+:async/await is used in database operations to handle asynchronous tasks in a simple way, allowing the program to wait for database responses without blocking execution and 
+making the code easier to read and manage.
 ### Q15. What is the difference between `findOne()` and `find()` in Mongoose?
-
----
+In Mongoose, findOne() returns a single document as an object, while find() returns multiple documents as an array based on the given condition.
 
 # SECTION B: Backend Coding Questions (50 Marks) - 70 Minutes
 
@@ -309,9 +314,9 @@ Instead of storing image URL, implement actual image upload:
 # Answer Sheet Template
 
 ```
-Name: ____________________
-Roll No: _________________
-Date: ___________________
+Name: Deepiga R S
+Roll No:24CC010
+Date:19/12/2025
 
 Section A - MCQ Answers:
 Q1: ___ Q2: ___ Q3: ___ Q4: ___ Q5: ___
